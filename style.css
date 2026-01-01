@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Card */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Title */
+.container h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #6c63ff;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #6c63ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #554fd8;
+}
+
+/* Weather Info */
+#weatherInfo {
+    margin-top: 15px;
+}
+
+#weatherInfo h2 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+#weatherInfo p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Responsive tweak */
+@media (max-width: 420px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+    
